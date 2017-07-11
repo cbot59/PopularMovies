@@ -20,7 +20,7 @@ import java.net.URL;
  * Created by cbot59 on 11/07/17.
  */
 
-public class NetworkUtils extends AsyncTask<String, Void, Movie[]> {
+class NetworkUtils extends AsyncTask<String, Void, Movie[]> {
     private final String mApiKey;
     private final OnTaskCompleted mListener;
 

@@ -11,7 +11,7 @@ import java.util.Date;
  * Created by cbot59 on 11/07/17.
  */
 
-public class SimpleDateHelper {
+class SimpleDateHelper {
     private static Date getFormattedDate(String date, String format) throws ParseException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(format);
 

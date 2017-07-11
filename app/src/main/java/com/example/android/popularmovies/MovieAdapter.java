@@ -12,7 +12,7 @@ import com.squareup.picasso.Picasso;
  * Created by cbot59 on 10/07/17.
  */
 
-public class MovieAdapter extends BaseAdapter {
+class MovieAdapter extends BaseAdapter {
     private final Context mContext;
     private final Movie[] mMovies;
 
