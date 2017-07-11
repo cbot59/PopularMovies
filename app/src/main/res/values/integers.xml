@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="thumbnail_width">185</integer>
+    <integer name="thumbnail_height">278</integer>
+</resources>
