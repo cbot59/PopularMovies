@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 .setIcon(R.drawable.ic_action_whatshot)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
 
-        mMenu.add(Menu.NONE, R.string.pref_sort_vote_avg_desc_key, Menu.NONE, "Sort by Rating")
+        mMenu.add(Menu.NONE, R.string.pref_sort_vote_avg_desc_key, Menu.NONE, null)
                 .setVisible(false)
                 .setIcon(R.drawable.ic_action_poll)
                 .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             Movie movie = (Movie) parent.getItemAtPosition(position);
 
             Intent intent = new Intent(getApplicationContext(), DetailsMovieActivity.class);
-            intent.putExtra("PARCEL_MOVIE", movie);
+            intent.putExtra(getResources().getString(R.string.parcel_movie), movie);
 
             startActivity(intent);
         }
